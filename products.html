@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Rio</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+<!--
+
+Tooplate 2127 Little Fashion
+
+https://www.tooplate.com/view/2127-little-fashion
+
+-->
+    </head>
+    <style>
+
+        @media screen and (max-width: 1025px) {
+            .first-sub-btn{
+                margin-left: calc(800px + 50%) !important;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .logo{
+                width: 30% !important;
+                height: 30% !important; 
+            }
+        }
+        .logo{
+            width: 10%;
+            height: 10%;
+            top: 0 !important; 
+            left: 0 !important;
+        }
+        .button-container{
+            display: flex !important;
+            justify-content: center !important;
+        }
+        .product-image{
+            border-radius: 5%;
+        }
+        .catego-type{
+            display: flex; 
+            justify-content:space-between; 
+            width: 100%; 
+            margin-top:2%;
+        }
+        .info-post{
+            text-align: justify; 
+            color:black;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            margin: 5px;
+            border: 1px solid green;
+            cursor: pointer;
+            transition: background-color 1s;
+            
+        }
+        
+        .sub-btn{
+            padding: 10px 15px;
+            border: 1px solid white;
+            margin-right: 1%;
+            cursor: pointer;
+            transition: background-color 1s;
+        }
+
+        .btn.active {
+            background-color: green; /* Couleur active */
+            color: white;
+        }
+
+        .sub-btn.active{
+            border: 2px solid gold !important;
+        }
+        
+        .sub-buttons {
+            margin-top: 3% !important;
+        }
+        
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .first-sub-btn{
+            margin-left: 15%;
+        }
+        .horizontal-scroll {
+            overflow-x: auto;
+            white-space: nowrap;
+            justify-content: center;
+        }
+
+        .horizontal-scroll::-webkit-scrollbar{
+            display: none;
+        }
+
+        .horizontal-scroll div {
+            display: inline-block;
+            margin-right: 10%;
+        }
+        
+        .precedent-prochain {
+            position: absolute;
+            top: -50% !important;
+            transform: translateY(-50%);
+            background-color: transparent;
+            color: black;
+            border-radius: 100%;
+            border: 1px solid black;
+        }
+        .precedent-prochain:hover{
+            background-color: rgb(255, 145, 1);
+        }
+    </style>
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                      
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <a class="navbar-brand" href="index.html"> -->
+                        <img src="images/logo.png" alt="logo de Rio" style="" class="logo">
+                        <!-- <h4 style="font-family:Georgia, 'Times New Roman', Times, serif; padding-left:2%;"><span>Rio</span></h4> -->
+                    <!-- </a> -->
+                    
+
+                    <!-- <div class="d-lg-none">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                        <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                    </div> -->
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="about.html">Story</a>
+                            </li> -->
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="products.html">Service</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <!-- <div class="d-none d-lg-flex">
+                            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                            <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                        </div> -->
+                    </div>
+                </div>
+            </nav>
+
+            <header class="site-header section-padding d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12">
+                            <h1>
+                                <span class="d-block text-dark">Choisir ta catégorie préférée</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="products section-padding">
+                <div class="container">
+                    <div class="col-12">
+                        <h4 class="mb-4">Catégories</h4>
+                    </div>
+
+                    <div class="button-container row">
+                        <div class="col-sm-3 justify-content-center d-flex">
+                            <button class="btn active rounded-pill px-3" onclick="toggleParent('parent1')">
+                                <strong>                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+                                        <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg>
+                                     Acheter & vendre
+                                </strong>
+                            </button>
+                        </div>
+                        <div class="col-sm-3 justify-content-center d-flex">
+                            <button class="btn rounded-pill px-3" onclick="toggleParent('parent2')">
+                                <strong>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-truck-flatbed" viewBox="0 0 16 16">
+                                        <path d="M11.5 4a.5.5 0 0 1 .5.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-4 0 1 1 0 0 1-1-1v-1h11V4.5a.5.5 0 0 1 .5-.5zM3 11a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1.732 0h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4a2 2 0 0 1 1.732 1z"/>
+                                    </svg>
+                                    Auto & Véhicule
+                                </strong>
+                            </button>
+                        </div>
+                        <div class="col-sm-3 justify-content-center d-flex">
+                            <button class="btn rounded-pill px-3" onclick="toggleParent('parent3')">
+                                <strong>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                                    </svg>
+                                    Immobilier
+                                </strong>
+                            </button>
+                        </div>
+                        <div class="col-sm-3 justify-content-center d-flex">
+                            <button class="btn rounded-pill px-3" onclick="toggleParent('parent4')">
+                                <strong>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg>
+                                    Emplois
+                                </strong>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="col-12">
+                        <h4 class="mb-4">Types</h4>
+                    </div>
+
+                    <div class="" style="position: relative;">
+                        <button class="precedent-prochain" id="precedent" style="left: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                            </svg>
+                        </button>
+
+                        <div class="horizontal-scroll sub-buttons" id="parent1">
+                            <!-- <div class=""> -->
+                                <button class="sub-btn active rounded-pill px-3 first-sub-btn" onclick="toggleSub('content1', this)">
+                                    <strong>Accessoires informatique</strong>
+                                </button>
+                            <!-- </div>
+                            <div class=""> -->
+                                <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content2', this)">
+                                    <strong>Appareils electromenagères</strong>
+                                </button>
+                            <!-- </div>
+                            <div class=""> -->
+                                <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content3', this)">
+                                    <strong>Appareils photo et caméras</strong>
+                                </button>
+                            <!-- </div>
+                            <div class=""> -->
+                                <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content4', this)">
+                                    <strong>Article pour bébé</strong>
+                                </button>
+                            <!-- </div>
+                            <div class=""> -->
+                                <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content5', this)">
+                                    <strong>Articles de sport et exercice</strong>
+                                </button>
+                            <!-- </div>
+                            <div class=""> -->
+                                <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content6', this)">
+                                    <strong>Audio</strong>
+                                </button>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="horizontal-scroll sub-buttons" id="parent2" style="display: none;">
+                            <button class="sub-btn active rounded-pill px-3" onclick="toggleSub('content7', this)">
+                                <strong>Auto & Camion</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content8', this)">
+                                <strong>Motos</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content9', this)">
+                                <strong>Service Automobile</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content10', this)">
+                                <strong>Pièces engins</strong>
+                            </button>
+                        </div>
+
+                        <div class="horizontal-scroll sub-buttons" id="parent2" style="display: none;">
+                            <button class="sub-btn active rounded-pill px-3" onclick="toggleSub('content7', this)">
+                                <strong>Auto & Camion</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content8', this)">
+                                <strong>Motos</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content9', this)">
+                                <strong>Service Automobile</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content10', this)">
+                                <strong>Pièces engins</strong>
+                            </button>
+                        </div>
+
+                        <div class="horizontal-scroll sub-buttons" id="parent3" style="display: none;">
+                            <button class="sub-btn active rounded-pill px-3" onclick="toggleSub('content10', this)">
+                                <strong>A louer</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content11', this)">
+                                <strong>A vendre</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content12', this)">
+                                <strong>Service Immobilier</strong>
+                            </button>
+                        </div>
+
+                        <div class="horizontal-scroll sub-buttons" id="parent4" style="display: none;">
+                            <button class="sub-btn active rounded-pill px-3" onclick="toggleSub('content13', this)">
+                                <strong>Administration et réception</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content14', this)">
+                                <strong>Bars, restaurant et tourisme</strong>
+                            </button>
+                            <button class="sub-btn rounded-pill px-3" onclick="toggleSub('content15', this)">
+                                <strong>Chauffeur et gardient de sécurité</strong>
+                            </button>
+                        </div>
+
+                        <button id="prochain" class="precedent-prochain" style="right: 10px;">                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+
+                    <div class="row content" id="content1">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content2">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content3">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content4">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content5">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content5">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content6">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content7">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content8">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content9">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content10">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content11">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content12">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content13">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content14">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row content" id="content15">
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <div class="product-thumb img-thumbnail">
+                                <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                <div class="catego-type">
+                                    <span class="product-alert" style="text-align: right !important;">New Arrival</span>
+                                    <span class="product-alert">New Arrival</span>
+                                </div>
+                                <div>
+                                    <h5 style="text-align: center;">Description</h5>
+                                    <p class="info-post">
+                                        &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolore quidem asperiores nisi iure, culpa sapiente 
+                                        maiores tempore! Sapiente unde ad enim officia ab!
+                                    </p>
+                                </div>
+                                <p style="text-align: center;">
+                                    <a class="btn btn-primary rounded-pill px-3" href="">Commander</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-10 me-auto mb-4">
+                        <h4 class="text-white mb-3"><a href="index.html"></a></h4>
+                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2025 <strong>Rio</strong></p>
+                        <br>
+                        <p class="copyright-text">Designed by <a href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+                    </div>
+
+                    <div class="col-lg-5 col-8">
+                        <h5 class="text-white mb-3">Menu</h5>
+
+                        <ul class="footer-menu d-flex flex-wrap">
+                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">Accueil</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Service</a></li>
+
+                            <!-- <li class="footer-menu-item"><a href="#" class="footer-menu-link">Annonce</a></li> -->
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-4">
+                        <h5 class="text-white mb-3">Social</h5>
+
+                        <ul class="social-icon">
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            
+            //Pour categorie
+            function toggleParent(parentId) {
+                //Pour overflow
+                const type_categorie = document.getElementById(parentId);
+                document.getElementById('precedent').addEventListener('click', () => {
+                    type_categorie.scrollBy({ left: -90, behavior: 'smooth' });
+                });
+            
+                document.getElementById('prochain').addEventListener('click', () => {
+                    type_categorie.scrollBy({ left: 90, behavior: 'smooth' });
+                });
+
+                // Masquer tous les sous-boutons et contenus
+                document.querySelectorAll('.sub-buttons').forEach(sub => {
+                    sub.style.display = 'none';
+                });
+            
+                document.querySelectorAll('.btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+            
+                // Afficher le sous-bouton du parent sélectionné
+                const parent = document.getElementById(parentId);
+                parent.style.display = 'flex';
+                document.querySelector(`button[onclick="toggleParent('${parentId}')"]`).classList.add('active');
+            
+                // Masquer tous les contenus
+                document.querySelectorAll('.content').forEach(content => {
+                    content.style.display = 'none';
+                });
+            
+                // Afficher le sous-bouton actif par défaut
+                const activeSub = parent.querySelector('.sub-btn.active');
+                if (activeSub) {
+                    toggleSub(activeSub.getAttribute('onclick').match(/'([^']+)'/)[1], activeSub);
+                }
+            }
+            
+            function toggleSub(contentId, subBtn) {
+                const parent = subBtn.closest('.sub-buttons');
+            
+                // Désactiver les autres sous-boutons
+                parent.querySelectorAll('.sub-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+            
+                // Activer le sous-bouton sélectionné
+                subBtn.classList.add('active');
+            
+                // Masquer tous les contenus
+                document.querySelectorAll('.content').forEach(content => {
+                    content.style.display = 'none';
+                });
+                
+                // Afficher le contenu sélectionné
+                document.getElementById(contentId).style.display = 'flex';
+            }
+            
+            // Initialisation : afficher le premier parent et sous-bouton par défaut
+            document.addEventListener('DOMContentLoaded', () => {
+                toggleParent('parent1');
+            });
+        </script>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
